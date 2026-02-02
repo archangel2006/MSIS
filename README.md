@@ -81,6 +81,44 @@ Frontend Dashboard (Next.js)
 ---
 
 ## 📦 Project Structure
+```
+MSIS/
+│
+├── docs/                         # System-level documentation
+│   ├── ARCHITECTURE.md
+│   ├── ML_Models_Overview.md
+│   ├── PROJECT_DESIGN.md
+│   └── project_overview.md
+│
+├── msis/                         # Core application package
+│   │
+│   ├── analysis/                 # Model research & experimentation
+│   │   ├── regime_exploration.ipynb
+│   │   ├── risks_failure_predictor.ipynb      
+│   │   └── Strategy_Failure_Predictor.ipynb   
+│   │
+│   ├── backend/                  # Backend API layer
+│   │   └── main.py               # FastAPI service serving ML outputs
+│   │
+│   ├── docs/                     # Model-specific documentation
+│   │   └── ML_model1.md
+│   │
+│   ├── frontend/                 # Frontend visualization layer
+│   │   ├── app.py                # Streamlit dashboard
+│   │   └── streamlit_dashboard.md
+│   │
+│   └── outputs/                  # Persisted model outputs
+│       ├── regimes.csv
+│       ├── regimes.json
+│       ├── Strategy_Failure_Predictor_outputs.csv
+│       └── Strategy_Failure_Predictor_outputs.json
+│
+├──LICENSE
+├──README.md                     # Project overview & usage
+├── requirements.txt              # Python dependencies
+└── runtime.txt                   # Deployment/runtime configuration
+ 
+```
 
 ---
 
