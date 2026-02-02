@@ -159,19 +159,19 @@ c1, c2, c3 = st.columns(3)
 with c1:
     st.plotly_chart(
         histogram_with_bar_edges(regime_df, "return", "Return Distribution"),
-        use_container_width=True
+        width="stretch",
     )
 
 with c2:
     st.plotly_chart(
         histogram_with_bar_edges(regime_df, "volatility", "Volatility Distribution"),
-        use_container_width=True
+        width="stretch"
     )
 
 with c3:
     st.plotly_chart(
         histogram_with_bar_edges(regime_df, "drawdown", "Drawdown Distribution"),
-        use_container_width=True
+        width="stretch"
     )
 
 # ---------------------------------
