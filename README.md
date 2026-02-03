@@ -39,11 +39,12 @@ To build an explainable market intelligence system that:
 
 ## 🧠 Models Overview
 
-| Model | Core Question | Approach | Key Output | Why It Matters |
-|------|--------------|----------|------------|----------------|
-| Model 1: Market Regime Discovery | What types of market behavior exist? | KMeans clustering on returns, volatility, drawdown | Regime label per day (calm / stressed / crisis) | Provides structural context for all downstream analysis |
-| Model 2A: Drawdown Risk Prediction | How risky is the next trading day? | Logistic Regression with regime-aware features | Probability of next-day drawdown | Shows how risk changes across regimes in an explainable way |
-| Model 2B: Strategy Failure Analysis | When do models & strategies fail? | Logistic, Random Forest, XGBoost + imbalance handling | Failure probability & regime-wise stress behavior | Evaluates robustness, not just prediction accuracy |
+| **Model**                               | **Core Question**                    | **Approach**                                              | **Key Output**                                        | **Why It Matters**                                              |
+| --------------------------------------- | ------------------------------------ | --------------------------------------------------------- | ----------------------------------------------------- | --------------------------------------------------------------- |
+| **Model 1: Market Regime Discovery**    | What types of market behavior exist? | KMeans clustering on **returns, volatility, drawdown**    | **Regime label per day** (calm / stressed / crisis)   | Provides **structural context** for all downstream analysis     |
+| **Model 2A: Drawdown Risk Prediction**  | How risky is the next trading day?   | **Logistic Regression** with **regime-aware features**    | **Probability of next-day drawdown**                  | Shows how risk **changes across regimes** in an explainable way |
+| **Model 2B: Strategy Failure Analysis** | When do models & strategies fail?    | Logistic, Random Forest, **XGBoost** + imbalance handling | **Failure probability** & regime-wise stress behavior | Evaluates **robustness**, not just prediction accuracy          |
+
 
 
 ---
@@ -98,10 +99,6 @@ MSIS/
 │   │   ├── strategy_failure_predictor.ipynb
 │   │   ├── regime_exploration.ipynb
 │   │   └── drawdown_risks_predictor.ipynb
-│   │
-│   ├── backend/                  
-│   │   └── main.py            
-│   │
 │   │
 │   ├── frontend/                 # Frontend visualization layer
 │   │   ├── app.py                # Streamlit dashboard
