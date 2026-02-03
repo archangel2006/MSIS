@@ -44,12 +44,7 @@ Precomputed Outputs
 ├─ CSV files
 └─ JSON files
         ↓
-Backend API (FastAPI)
-│
-├─ Reads computed results
-└─ Exposes insight endpoints
-        ↓
-Frontend Dashboard (Next.js)
+Frontend Dashboard (Streamlit)
 │
 ├─ Interactive charts
 ├─ Regime exploration
@@ -83,32 +78,24 @@ Frontend Dashboard (Next.js)
 ```
 MSIS/
 │
-├── docs/                         # System-level documentation
-│   ├── ARCHITECTURE.md
-│   ├── ML_Models_Overview.md
-│   ├── PROJECT_DESIGN.md
-│   └── project_overview.md
-│
 ├── msis/                         # Core application package
 │   │
-│   ├── analysis/                 # Model research & experimentation
-│   │   ├── Strategy_Failure_Predictor.ipynb
+│   ├── ml_models/                 # Model research & experimentation
+│   │   ├── strategy_failure_predictor.ipynb
 │   │   ├── regime_exploration.ipynb
 │   │   └── risks_failure_predictor.ipynb
 │   │
 │   ├── backend/                  
 │   │   └── main.py            
 │   │
-│   ├── docs/                     # Model-specific documentation
-│   │   └── ML_model1.md
 │   │
 │   ├── frontend/                 # Frontend visualization layer
 │   │   ├── app.py                # Streamlit dashboard
 │   │   └── streamlit_dashboard.md
 │   │
 │   └── outputs/                  # Persisted model outputs
-│       ├── Strategy_Failure_Predictor_outputs.csv
-│       ├── Strategy_Failure_Predictor_outputs.json
+│       ├── srategy_failure_predictor.csv
+│       ├── strategy_failure_predictor.json
 │       ├── regimes.csv
 │       └── regimes.json
 │
